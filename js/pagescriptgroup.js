@@ -330,6 +330,9 @@ function ChangeShowGroup(){
 }
 /** result Download **********************************************************/
 $('#pageGroupResultDownload').live('pageinit', function() {
+	if(siteInfo.isAppIOS==true){
+		$("#btnDownloadDoc, #btnDownloadHtml", "#pageGroupResultDownload").parent().remove();
+	} 
 });
 $('#pageGroupResultDownload').live('pagebeforeshow', function(event, ui) {
 	var vars = getUrlVars(); 
