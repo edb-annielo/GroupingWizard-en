@@ -445,8 +445,13 @@ $('#pageInfo').live('pageinit', function() {
 	if(siteInfo.isApp){
 		$("#pageInfo a.extlink").each(function(){
 				var href=$(this).attr("href");
+				/*$(this).attr({
+					"rel":"external"});*/
+				var newhref = href;
 				$(this).attr({
-					"rel":"external"});
+					"newhref":newhref,
+					"href": newhref}).bind("click", 
+					function(){var ref = window.open($(this).attr("newhref"), '_system'); return false;});
 		});
 	}
 });

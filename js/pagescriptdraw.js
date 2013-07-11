@@ -314,6 +314,9 @@ function DownloadDrawResult(){
 
 /** draw result Download **********************************************************/
 $('#pageDrawResultDownload').live('pageinit', function() {
+	if(siteInfo.isAppIOS==true){
+		$("#btnDownloadDoc, #btnDownloadHtml", "#pageDrawResultDownload").parent().remove();
+	} 
 });
 $('#pageDrawResultDownload').live('pagebeforeshow', function(event, ui) {
 	var vars = getUrlVars(); 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "com.edbite.groupingwizard"
+id = "com.edbite.groupingwizard1"
 version = "1.5">
   <!-- version: for best results, use a major/minor/patch style version, with three numbers, such as 0.0.1 -->
   
@@ -10,7 +10,7 @@ version = "1.5">
   <author href="http://diy.fwg.hk/groupingwizard/" email="ite@edb.gov.hk">ITE Section of the Education Bureau 教育局資訊科技教育組</author>
   
   <!-- Multi-Platform -->
-  <preference name="phonegap-version" value="2.3.0" />
+  <preference name="phonegap-version" value="2.9.0" />
   <preference name="orientation" value="default" />
   <preference name="target-device" value="universal" />
   <preference name="fullscreen" value="false" />
@@ -38,10 +38,10 @@ version = "1.5">
   <!--<access origin="http://diy.fwg.hk/ajax/import*" />-->
   
   <!-- if a single icon is specified then Build will use it for all platforms -->
-  <icon src="appfiles/icon.png" />
+  <icon src="appfiles_ch/icon.png" />
   
   <!-- the default attribute can also be used -->
-  <icon src="appfiles/icon.png" default="true" />
+  <icon src="appfiles_ch/icon.png" default="true" />
   
   <!-- iOS requires specific dimensions for icons; classic iPhone screens, Retina
 	  displays, and iPad screens respectively -->
@@ -50,6 +50,7 @@ version = "1.5">
   <icon src="appfiles/icon-72.png" gap:platform="ios"  width="72" height="72"/>
   <icon src="appfiles/icon-114.png" gap:platform="ios"  width="114" height="114"/>
   <icon src="appfiles/icon-512.png" gap:platform="ios"  width="512" height="512"/>
+  <icon src="appfiles/icon-1024.png" gap:platform="ios"  width="1024" height="1024"/>
   
   <!-- Android requires specific dimensions; ldpi, mdpi, and hdpi respectively -->
   <icon src="appfiles/icon-36.png" gap:platform="android" width="36" height="36" gap:density="ldpi"/>
@@ -65,6 +66,7 @@ version = "1.5">
 	screens, Retina displays, and iPad screens -->
   <gap:splash src="appfiles/splash.png" />
   <gap:splash src="appfiles/splash-640.png" width="640" height="960"/>
+  <gap:splash src="appfiles/splash-640-ios5.png" width="640" height="1136"/>
   <gap:splash src="appfiles/splash-768.png" width="768" height="1004"/>
   <gap:splash src="appfiles/splash-1024.png" width="1024" height="748"/>
   
