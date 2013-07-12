@@ -38,10 +38,10 @@ version = "1.5">
   <!--<access origin="http://diy.fwg.hk/ajax/import*" />-->
   
   <!-- if a single icon is specified then Build will use it for all platforms -->
-  <icon src="appfiles_ch/icon.png" />
+  <!-- <icon src="appfiles_ch/icon.png" /> -->
   
   <!-- the default attribute can also be used -->
-  <icon src="appfiles_ch/icon.png" default="true" />
+  <!-- <icon src="appfiles_ch/icon.png" default="true" /> -->
   
   <!-- iOS requires specific dimensions for icons; classic iPhone screens, Retina
 	  displays, and iPad screens respectively -->
